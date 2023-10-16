@@ -274,5 +274,5 @@ mongoose.connect(process.env.MONGODB_URL ? process.env.MONGODB_URL : '')
 		});
 	})
 	.catch(err => {
-		console.log('error while connecting to mongodb');
+		console.log('error while connecting to mongodb', err);
 	});
